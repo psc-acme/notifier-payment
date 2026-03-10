@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/notifier-payment",
+    "description": "Package notifier-payment for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\NotifierPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "psr/event-dispatcher": "^1.0",
+        "psr/log": "^3.0",
+        "doctrine/collections": "^2.0",
+        "symfony/messenger": "^7.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.0",
+        "symfony/phpunit-bridge": "^7.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
